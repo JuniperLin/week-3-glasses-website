@@ -1,0 +1,44 @@
+// COLOR
+
+// GLOBAL
+$primary: #650300; // 首頁, 部落格
+$secondary: #aa0601;
+$dark: #000000;
+$light: #ffffff;
+$c-gray: #212529; //首頁, 門市據點
+$c-gray-1: #555555; // 系列鏡框, 部落格
+$c-gray-2: #f2f2f2; // 系列鏡框, 部落格
+$c-gray-7: #707070; // 首頁, 部落格
+$border-2: #00000029; //首頁, 門市據點, 部落格
+
+// 首頁
+$bgc: #aa06010d;
+$border-1: #dee2e6;
+
+// 系列鏡框
+$c-brown: #5f3e2d;
+$c-lightBrown: #b75929;
+$border-3: #dcdcdc;
+
+// 門市據點
+$c-gray-3: #ced4da;
+$c-gray-4: #495057;
+$c-gray-5: #373a3c;
+$border-4: #00000020;
+
+// 部落格
+$c-black: #0a0a0a;
+$c-gray-6: #6c6c6c;
+
+// ANIMATION
+@keyframes jumping {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

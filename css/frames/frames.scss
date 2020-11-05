@@ -1,0 +1,431 @@
+@import "../setUp/variable.scss";
+
+.frames_menu_list.container {
+  display: flex;
+  max-width: 1386px;
+  .frames_menu_list_item {
+    padding: 24px 0;
+    border: 1px solid $border-3;
+    width: 462px;
+    a {
+      display: flex;
+      max-width: 462px;
+      justify-content: center;
+      align-items: center;
+      color: $dark;
+      font-size: 42px;
+      line-height: 63px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      p {
+        margin-left: 8px;
+      }
+    }
+    &:hover {
+      border-bottom: 16px solid $secondary;
+    }
+  }
+}
+.frames_banner {
+  display: flex;
+  li {
+    width: 49.3333%;
+    img {
+      width: 100%;
+    }
+    &:last-child {
+      margin-left: 1.3333%;
+    }
+  }
+}
+.frames_product_card {
+  padding: 88px 0 156px;
+  text-align: center;
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    line-height: 63px;
+    font-weight: 500;
+  }
+  h4 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 40px;
+  }
+  .frames_product_list {
+    display: flex;
+    flex-wrap: wrap;
+    .frames_product_list_item {
+      width: 255px;
+      margin-bottom: 104px;
+      &:not(:nth-child(4n + 1)) {
+        margin-left: 30px;
+      }
+      // &:nth-child(-n + 5) {
+      // }
+      .frames_product_list_item_inner {
+        li {
+          &:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            font-family: "Roboto", sans-serif;
+            font-size: 24px;
+            line-height: 36px;
+            p {
+              &:last-child {
+                color: $secondary;
+              }
+            }
+          }
+          &:last-child {
+            position: relative;
+            &::before,
+            &::after {
+              content: "";
+              position: absolute;
+              width: 24px;
+              height: 24px;
+              border-radius: 4px;
+              background-color: $c-brown;
+              left: 0;
+              top: 0;
+            }
+            &::after {
+              left: 32px;
+              background-color: $c-lightBrown;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.frames_pages_nav {
+  height: 48px;
+  width: 375px;
+  margin: 0 auto;
+  border: 1px solid $c-gray-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  li {
+    font-size: 18px;
+    line-height: 27px;
+    border-left: 1px solid $c-gray-1;
+    height: 100%;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      color: $c-gray-1;
+    }
+    &:first-child,
+    &:last-child {
+      font-family: "Noto Sans TC", sans-serif;
+      font-size: 19px;
+      line-height: 29px;
+      width: 81px;
+      background-color: $c-gray-2;
+    }
+    &:first-child {
+      border-left: none;
+      background-color: transparent;
+    }
+    &:hover {
+      background-color: $dark;
+      a {
+        color: $light;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .frames_menu_list.container {
+    max-width: 100%;
+    .frames_menu_list_item {
+      padding: 16px 0;
+      a {
+        font-size: 28px;
+        line-height: 42px;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+  .frames_banner {
+    li {
+      width: 50%;
+      height: 309px;
+      img {
+        height: 100%;
+      }
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .frames_product_card {
+    padding: 40px 0 104px;
+    h3 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    h4 {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 32px;
+    }
+    .frames_product_list {
+      .frames_product_list_item {
+        width: 330px;
+        margin-bottom: 72px;
+        &:not(:nth-child(4n + 1)) {
+          margin-left: 0;
+        }
+        &:nth-child(even) {
+          margin-left: 30px;
+        }
+        .frames_product_list_item_inner {
+          li {
+            img {
+              width: 100%;
+            }
+            &:nth-child(2) {
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .frames_menu_list.container {
+    max-width: 100%;
+    .frames_menu_list_item {
+      padding: 8px 0;
+      a {
+        font-size: 14px;
+        line-height: 19px;
+        img {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+  .frames_banner {
+    li {
+      height: 144px;
+    }
+  }
+  .frames_product_card {
+    padding: 30px 0 56px;
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .frames_product_list {
+      .frames_product_list_item {
+        width: 100%;
+        margin-bottom: 32px;
+        &:nth-child(even) {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-bottom: 80px;
+        }
+        .frames_product_list_item_inner {
+          li {
+            img {
+              width: 100%;
+            }
+            &:nth-child(2) {
+              font-size: 16px;
+              line-height: 30px;
+            }
+            &:last-child {
+              &::before,
+              &::after {
+                width: 17px;
+                height: 17px;
+              }
+              &::after {
+                left: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .frames_pages_nav {
+    height: 32px;
+    width: 250px;
+    li {
+      font-size: 12px;
+      line-height: 18px;
+      width: 27px;
+      &:first-child,
+      &:last-child {
+        font-size: 12px;
+        line-height: 18px;
+        width: 53px;
+      }
+    }
+  }
+}
+
+// FRAMES PAGE 2
+.frames_product_card {
+  .frames_product_list {
+    .sun {
+      width: 350px;
+      &:not(:nth-child(4n + 1)) {
+        margin-left: 0;
+      }
+      &:not(:nth-child(3n + 1)) {
+        margin-left: 30px;
+      }
+      .sun_inner {
+        img {
+          width: 100%;
+        }
+        li {
+          &:nth-child(2) {
+            display: initial;
+            text-align: left;
+            margin-bottom: 8px;
+          }
+          &:last-child {
+            &::before,
+            &::after {
+              top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .frames_product_card {
+    .frames_product_list {
+      .sun {
+        width: 330px;
+        margin-bottom: 72px;
+        &:not(:nth-child(3n + 1)) {
+          margin-left: 0;
+        }
+        &:nth-child(even) {
+          margin-left: 30px;
+        }
+        .sun_inner {
+          li {
+            &:nth-child(2) {
+              display: flex;
+            }
+            &:last-child {
+              &::before,
+              &::after {
+                top: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .frames_menu_list.container {
+    max-width: 100%;
+    .frames_menu_list_item {
+      padding: 8px 0;
+      a {
+        font-size: 14px;
+        line-height: 19px;
+        img {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+  .frames_banner {
+    li {
+      height: 144px;
+    }
+  }
+  .frames_product_card {
+    padding: 30px 0 56px;
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .frames_product_list {
+      .frames_product_list_item {
+        width: 100%;
+        margin-bottom: 32px;
+        &:nth-child(even) {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-bottom: 80px;
+        }
+        .frames_product_list_item_inner {
+          li {
+            img {
+              width: 100%;
+            }
+            &:nth-child(2) {
+              font-size: 16px;
+              line-height: 30px;
+            }
+            &:last-child {
+              &::before,
+              &::after {
+                width: 17px;
+                height: 17px;
+              }
+              &::after {
+                left: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .frames_pages_nav {
+    height: 32px;
+    width: 250px;
+    li {
+      font-size: 12px;
+      line-height: 18px;
+      width: 27px;
+      &:first-child,
+      &:last-child {
+        font-size: 12px;
+        line-height: 18px;
+        width: 53px;
+      }
+    }
+  }
+}

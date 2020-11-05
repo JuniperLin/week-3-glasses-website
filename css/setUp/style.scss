@@ -1,0 +1,94 @@
+// setUp
+@import "../setUp/reset.scss";
+@import "../setUp/variable.scss";
+@import "../setUp/layout.scss";
+// homePage
+@import "../homePage/index.scss";
+// frames
+@import "../frames/frames.scss";
+// store
+@import "../store/store.scss";
+
+// GLOBAL
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// FONT
+h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 64px;
+  line-height: 96px;
+  font-weight: 700;
+}
+h2 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bg-pink {
+  background-color: $bgc;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 64px;
+    line-height: 96px;
+  }
+  .container {
+    max-width: 900px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+    line-height: 72px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 32px;
+  }
+  .container {
+    max-width: 690px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 375px;
+  }
+}
+@media (max-width: 375px) {
+  h1 {
+    font-size: 32px;
+    line-height: 72px;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+  .container {
+    max-width: 345px;
+  }
+}
