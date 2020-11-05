@@ -253,6 +253,22 @@
 }
 
 @media (max-width: 768px) {
+  .classic .classic_item .classic_item_card .classic_card_title p {
+    font-size: 28px;
+  }
+  .classic .classic_item .classic_item_card:nth-child(2) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .classic .classic_item .classic_item_card:nth-child(2) .classic_card_title {
+    margin-left: 2.3333%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 375px) {
   .classic {
     padding: 32px 0;
   }

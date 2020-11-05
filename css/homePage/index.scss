@@ -198,6 +198,27 @@
 
 @media (max-width: 768px) {
   .classic {
+    .classic_item {
+      .classic_item_card {
+        .classic_card_title {
+          p {
+            font-size: 28px;
+          }
+        }
+        &:nth-child(2) {
+          flex-direction: row;
+          .classic_card_title {
+            margin-left: 2.3333%;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .classic {
     padding: 32px 0;
     .classic_item {
       display: none;
